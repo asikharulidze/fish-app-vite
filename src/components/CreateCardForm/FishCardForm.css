@@ -1,0 +1,47 @@
+.fish-card-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  button {
+
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #347c34;
+  }
+  .error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+  }
