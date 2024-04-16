@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './FishCardForm.css'; 
 import styled from 'styled-components';
 
@@ -11,6 +11,10 @@ const FishCardForm = ({onCardSubmit}) => {
     name: ''
   });
 
+  const nameInput = useRef(null);
+  useEffect(() => {
+    nameInput.current.focus();
+  });
   const [formErrors, setFormErrors] = useState({});
   const [file, setFile] = useState();
   const handleChange = (e) => {
@@ -81,6 +85,7 @@ const FishCardForm = ({onCardSubmit}) => {
           name="name"
           value={CardForm.name}
           onChange={handleChange}
+          ref={nameInput}
         />
         {
         formErrors.name && (
